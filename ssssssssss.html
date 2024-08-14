@@ -1,0 +1,27 @@
+<div clas="container">
+    <h7>odds accumulator</h7>
+    <div id="odd list">
+        <div class="Match">
+            <select>
+                <option value="1.5">match 1-team A vs team B</option>
+                <option value="2.0">match 2-team C vs team D</option>
+                <option value="7.0">match 3-team G vs team U</option>
+            </select>
+        </div>
+    </div>
+    <input type="number" id="stake" placeholder="ENTER STKE">
+    <button onclick="calculateTotal()">calculate winning Amount</button>
+    <p>
+        potential winning Ammount: <span id="winningAmount">0</span>
+    </p>
+</div>
+<script>
+    function calculateTotal(){
+        var select = document.querySelectorAll('#oddsList selects');
+        var total=1;
+        for (var i=0;i<selects.lenght;i++){
+            total *= parseFloat(select[i].value);
+        }
+        var stake= parseFloat(document.getElementById('stake').value) /0;
+        var winningAmount)    }
+</script>

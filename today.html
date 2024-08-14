@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Match Tips</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+    body {
+background-color: #2C2C2E;
+color: #FFFFFF;
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+.container {
+padding: 20px;
+}
+h1 {
+text-align: center;
+margin-bottom: 20px;
+}
+.tips {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+.category {
+background-color: #3A3A3C;
+padding: 15px;
+border-radius: 10px;
+}
+.category h2 {
+display: flex;
+align-items: center;
+gap: 10px;
+font-size: 18px;
+margin: 0 0 10px 0;
+}
+.category img {
+width: 20px;
+height: 20px;
+}
+.match {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #48484A;
+padding: 10px;
+border-radius: 5px;
+margin-bottom: 10px;
+}
+.teams {
+flex-grow: 1;
+}
+.score {
+width: 50px;
+text-align: center;
+}
+.result {
+width: 30px;
+height: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+color: #2C2C2E;
+font-weight: bold;
+}
+.result.D {
+background-color: #FFD700; /* Draw */
+}
+.result.A {
+background-color: #FF4500; /* Away Win */
+}
+.result.H {
+background-color: #32CD32; /* Home Win */
+}
+.view-tip {
+background-color: #1C1C1E;
+color: #FFFFFF;
+border: none;
+border-radius: 5px;
+padding: 5px 10px;
+cursor: pointer;
+}
+.view-tip:hover {
+background-color: #FFFFFF;
+color: #1C1C1E;
+}
+
+</style>
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+const viewTipButtons = document.querySelectorAll('.view-tip');
+viewTipButtons.forEach(button => {
+button.addEventListener('click', () => {
+alert('Tip: over 1.5.');
+});
+});
+});
+
+    </script>
+<div class="container">
+<h1>Tips For Friday, August 9th, 2024</h1>
+<div class="tips">
+<div class="category">
+<h2><img src="brazil.png" alt="Brazil"> Copa do Brasil Tips</h2>
+<div class="match">
+<div class="teams">Goias v Sao Paulo</div>
+<div class="score">1-1</div>
+<div class="result D">D</div>
+<button class="view-tip">View Tip</button>
+</div>
+</div>
+<div class="category">
+<h2><img src="england.png" alt="England"> England Championship Tips</h2>
+<div class="match">
+<div class="teams">Blackburn v Derby</div>
+<div class="score">0-2</div>
+<div class="result A">A</div>
+<button class="view-tip">View Tip</button>
+</div>
+<div class="match">
+<div class="teams">Preston v Sheff Utd</div>
+<div class="score">1-0</div>
+<div class="result H">H</div>
+<button class="view-tip">View Tip</button>
+</div>
+</div>
+<div class="category">
+<h2><img src="england.png" alt="England"> England League One Tips</h2>
+<div class="match">
+<div class="teams">Barnsley v Mansfield</div>
+<div class="score">2-2</div>
+<div class="result D">D</div>
+<button class="view-tip">View Tip</button>
+</div>
+</div>
+<div class="category">
+<h2><img src="england.png" alt="England"> England League Two Tips</h2>
+<div class="match">
+<div class="teams">Chesterfield v Swindon</div>
+<div class="score">3-1</div>
+<div class="result H">H</div>
+<button class="view-tip">View Tip</button>
+</div>
+</div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
